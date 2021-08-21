@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [My suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browserName" value="abcd"/>
+  <test parallel="classes" name="Smoke Tests(failed)">
+    <classes>
+      <class name="org.project.com.TC01">
+        <methods>
+          <include name="testCase01"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- org.project.com.TC01 -->
+      <class name="org.project.com.TC02">
+        <methods>
+          <include name="test02"/>
+        </methods>
+      </class> <!-- org.project.com.TC02 -->
+    </classes>
+  </test> <!-- Smoke Tests(failed) -->
+</suite> <!-- Failed suite [My suite] -->
