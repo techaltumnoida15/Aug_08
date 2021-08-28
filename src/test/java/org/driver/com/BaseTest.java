@@ -40,12 +40,12 @@ public class BaseTest {
 		}
 
 		driver.manage().window().maximize();
-		driver.get("http://www.google.com");
+		
 		
 	}
 	
 	@AfterMethod
 	public void quitBrowser() {
-		driver.quit();
+		//driver.quit();
 	}
 }

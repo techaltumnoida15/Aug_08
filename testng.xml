@@ -8,18 +8,7 @@
 		<parameter name="browserName" value="chrome"></parameter>
 		<classes>
 
-			<class name="org.project.com.TC02" />
-
-		</classes>
-
-	</test> <!-- Test -->
-
-
-	<test name="Regression Tests">
-		<parameter name="browserName" value="firefox"></parameter>
-		<classes>
-
-			<class name="org.project.com.TC01" />
+			<class name="org.project.com.SnapDealSearchItemTest" />
 
 		</classes>
 

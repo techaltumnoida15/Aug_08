@@ -1,0 +1,78 @@
+Relative:
+
+<HTML-TAG att=value> TEXT </HTML-TAG>
+
+1.
+//HTML-TAG[@att='value']
+
+//input[@id='from0']
+
+2. If you want to navigate on next immidiate child  =>  "/"
+
+//ul[@role='tablist']
+
+//ul[@role='tablist']/li[4]
+
+3. use TEXT
+
+//HTML-TAG[text()='txtVal']
+
+//div[text()='Tools']
+
+//div[text()='Companies']
+
+4. If there are multiple elements belongs to a single locator
+
+(//div[@class='mTxt'])[3]
+
+//descendant::div[@class='mTxt'][3]
+
+//descendant::div[@class='mTxt'][4]
+
+5. contains
+
+//input[@id='from2']
+
+//HTML-TAG[contains(@id, 'form')]
+
+//input[contains(@id, 'from')]
+
+===================================================
+
+CSS Selector:
+
+
+1.
+css => HTML-TAG[att='value']
+
+
+div[class='accountInner']
+
+
+If you want to navigate on next immidiate child  =>  " ", ">", "+"
+
+div[class='accountInner'] > span
+
+ul[class='nav smallNav'] > li:nth-child(2)
+
+ul[class='nav smallNav'] > li:nth-child(7)
+--------------------------------------------------
+
+Wild cards: ^, $, *
+
+span[class^='accountUserImg ']    => ^ [startsWith]
+
+span[class$='ountUserImg col-xs-9']   => EndsWith
+
+span[class*='UserImg col-xs-']   => anywhere
+
+============================
+if ID is given in HTML code
+
+css= HTML-TAG#ID
+
+If CLASS is given in HTML CODE
+css= HTML-TAG.CLASS
+
+
+
