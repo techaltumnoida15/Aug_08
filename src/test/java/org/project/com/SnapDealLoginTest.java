@@ -1,5 +1,7 @@
 package org.project.com;
 
+import java.util.Set;
+
 import org.driver.com.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -37,5 +39,9 @@ public class SnapDealLoginTest extends BaseTest{
 		WebElement mobileNumberTextBox = driver.findElement(By.id("userName"));
 		mobileNumberTextBox.sendKeys(mobNum);
 		System.out.println(mobNum + " is typed.");
+		
+		//List<WebElement> myL1 = driver.findElements(By.id(""));
+		
+		Set<String> mySet = driver.getWindowHandles();
 	}
 }
